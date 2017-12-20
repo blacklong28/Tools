@@ -8,17 +8,17 @@ import cv2
 
 
 cap = cv2.VideoCapture("./records/vlc-record-2017-11-14-11h36m49s-rtsp___192.168.0.130_live1.sdp-.mp4")
-#IMG_1320.MOV  0~2099 ||| IMG_1321.MOV  2100~3499  ||| IMG_1322.MOV  3500~5299  |||
-#IMG_1323.MOV  5299~6899 ||| IMG_1324.MOV  6900~8099  ||| IMG_1326.MOV  8100~5299  |||
-#IMG_1361.MOV  12000~6899 ||| IMG_1324.MOV  6900~8099  ||| IMG_1326.MOV  8100~11999  |||
+##
+##
 t = 0
 #IMG_1279.MOV 0~1999  |||  IMG_1280.MOV 2000~3599 |||  IMG_1280.MOV 3600~
 f = 0 
 while(1):
     t = t+1
-    f = f+1#跳帧
+    f = f+1#
     # get a frame
     ret, frame = cap.read()
+    ##跳帧部分
     if f <=8:
         continue
     f = 0
