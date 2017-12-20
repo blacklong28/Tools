@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+#作者:blacklong617
+#适用于视频个数少的情况
+#将视频跳帧的转成图片
+
 import os
 import numpy as np
 
