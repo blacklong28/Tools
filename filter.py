@@ -1,3 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*- 
+# @author: lxz
+
+# @Module function：根据图片尺寸过滤图片
+# @Version:0.0.1
+# @Date:20191101
+# @Description 
+# 过滤./img 文件夹下的图片
+# 过滤条件 宽大于30像素 高大于80像素
+# 并行化处理
+# 将过滤以后的图片保存在./img_save文件夹下
+
 import cv2
 import sys
 import os
